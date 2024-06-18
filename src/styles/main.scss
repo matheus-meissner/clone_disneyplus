@@ -4,6 +4,8 @@
 @use 'plans';
 @use 'available-devices';
 @use 'faq';
+@use 'footer';
+@use 'header';
 
 @mixin text($fontSize: 16px) {
     font-size: $fontSize;
@@ -39,12 +41,24 @@ body {
 }
 .text--big {
     @include text(18px);
+
+    @media (max-width: 768px) {
+        @include text (15px);
+    }
 }
 .text {
     @include text;
+
+    @media (max-width: 768px) {
+        @include text (14px);
+    }
 }
 .text--small {
     @include text(12px);
+
+    @media (max-width: 768px) {
+        @include text (11px);
+    }
 }
 .text--subItem {
     list-style-type: disc;
@@ -60,12 +74,24 @@ body {
 }
 .title--big {
     @include title(44px);
+
+    @media (max-width: 768px) {
+        @include title (26px);
+    }
 }
 .title {
     @include title(40px);
+
+    @media (max-width: 768px) {
+        @include title (24px);
+    }
 }
 .title--small {
     @include title;
+
+    @media (max-width: 768px) {
+        @include title (22px);
+    }
 }
 button {
     display: block;
@@ -73,18 +99,28 @@ button {
     height: 48px;
     font-size: 16px;
     color: variaveis.$corTextoSecundario;
-    background-color: #6421ff;
+    background-color: variaveis.$corBotaoPrimario;
     text-transform: uppercase;
     border-radius: 4px;
     margin-top: 2vw;
     margin-bottom: 8px;
     cursor: pointer;
+    letter-spacing: 1px;
+    border: 1px solid variaveis.$corDeFundo;
+
+    &:hover {
+        background-color: lighten($color: variaveis.$corBotaoPrimario, $amount: 3%);
+    }
 }
 .image-text-section {
     padding: 5.6vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
 
     img {
         max-width: 100%;
@@ -115,6 +151,12 @@ button {
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @media (max-width: 768px) {
+                position: relative;
+                left: 0;
+                width: 100%;
+            }
         }
     }
 }
