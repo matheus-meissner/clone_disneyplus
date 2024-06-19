@@ -131,6 +131,11 @@ button {
 
         h2 {
             margin-bottom: 24px;
+
+            @media (max-width: 768px) {
+                margin-top: 10px;
+                margin-bottom: 14px;
+            }
         }
     }
 

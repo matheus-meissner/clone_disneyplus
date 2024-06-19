@@ -15,19 +15,28 @@
                 color: white;
                 font-size: 20px;
                 padding: 24px;
-                display: block;
                 cursor: pointer;
                 position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
 
                 &::after {
                     content: '+';
-                    position: absolute;
-                    top: 0;
-                    right: 24px;
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
                     font-size: 40px;
+                    margin-left: 10px; // Espaçamento entre o texto e o sinal
+                }
+            }
+
+
+            @media (max-width: 768px) {
+                &__question {
+                    font-size: 18px; // Ajustar o tamanho da fonte para telas menores
+                    padding: 16px;   // Ajustar o padding para telas menores
+
+                    &::after {
+                        font-size: 30px; // Ajustar o tamanho do sinal para telas menores
+                    }
                 }
             }
 
