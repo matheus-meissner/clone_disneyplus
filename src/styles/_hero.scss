@@ -15,6 +15,28 @@
         margin-top: -55px;
     }
 
+    @media (min-width: 769px) and (max-width: 1023px) {
+        background-image: url(../images/hero_celular.jpeg);
+        padding-top: calc(50vw + 25px);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -55px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1366px) {
+        background-image: url(../images/hero_tablet.jpg);
+        padding-top: calc(50vw + 25px);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: -100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     &__content {
         max-width: calc(640px - 10%);
 
@@ -24,6 +46,14 @@
 
             @media (max-width: 768px) {
                 max-width: 180px;
+            }
+
+            @media (min-width: 769px) and (max-width: 1023px) {
+                max-width: 200px;
+            }
+
+            @media (min-width: 1024px) and (max-width: 1366px) {
+                max-width: 250px;
             }
         }
 
@@ -57,6 +87,18 @@
 
                 img {
                     max-height: 48px;
+
+                    @media (min-width: 769px) and (max-width: 1023px) {
+                        max-height: 56px;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                    }
+
+                    @media (min-width: 1024px) and (max-width: 1366px) {
+                        max-height: 56px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
                 }
             }
         }

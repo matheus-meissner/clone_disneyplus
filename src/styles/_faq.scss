@@ -40,6 +40,28 @@
                 }
             }
 
+            @media (min-width: 769px) and (max-width: 1023px) {
+                &__question {
+                    font-size: 24px; // Ajustar o tamanho da fonte para telas menores
+                    padding: 16px;   // Ajustar o padding para telas menores
+
+                    &::after {
+                        font-size: 30px; // Ajustar o tamanho do sinal para telas menores
+                    }
+                }
+            }
+
+            @media (min-width: 1024px) and (max-width: 1366px) {
+                &__question {
+                    font-size: 24px; // Ajustar o tamanho da fonte para telas menores
+                    padding: 16px;   // Ajustar o padding para telas menores
+
+                    &::after {
+                        font-size: 30px; // Ajustar o tamanho do sinal para telas menores
+                    }
+                }
+            }
+
             &__answer {
                 height: 0;
                 overflow: hidden;

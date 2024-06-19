@@ -29,6 +29,14 @@
         @media (max-width: 768px) {
             padding: 0px 12px 0px 20px;
         }
+
+        @media (min-width: 769px) and (max-width: 1023px) {
+            padding: 10px 12px 0px 20px;
+        }
+
+        @media (min-width: 1024px) and (max-width: 1366px) {
+            padding: 12px 17px 0px 25px;
+        }
     }
     &__logo {
         max-width: 80px;
@@ -38,6 +46,14 @@
 
         @media (max-width: 768px) {
             max-width: 64px;
+        }
+
+        @media (min-width: 769px) and (max-width: 1023px) {
+            max-width: 90px;
+        }
+
+        @media (min-width: 1024px) and (max-width: 1366px) {
+            max-width: 110px;
         }
     }
     &__links {
@@ -74,6 +90,20 @@
         padding: 8px 11px;
         height: 35px;
         letter-spacing: 0;
+    }
+
+    @media (min-width: 769px) and (max-width: 1023px) {
+        font-size: 18px;
+        padding: 8px 11px;
+        height: 44px;
+        letter-spacing: 1;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1366px) {
+        font-size: 18px;
+        padding: 16px 11px;
+        height: 46px;
+        letter-spacing: 1;
     }
 
     &--secondary {
